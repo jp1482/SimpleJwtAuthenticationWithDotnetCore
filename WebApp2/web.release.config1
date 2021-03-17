@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.webServer>
+    <handlers>
+      <remove name="WebDAV" xdt:Transform="InsertIfMissing"/>
+    </handlers>
+    <aspNetCore xdt:Transform="SetAttributes(stdoutLogEnabled)" stdoutLogEnabled="true" />
+    <modules xdt:Transform="InsertIfMissing">
+      <remove name="WebDAVModule" xdt:Transform="InsertIfMissing"/>
+    </modules>
+  </system.webServer>
+</configuration>
